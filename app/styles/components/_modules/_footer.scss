@@ -7,9 +7,22 @@ $footer-text-color: #ffffff;
   background-color: $footer-bg-grey;
   color: $footer-text-color;
 
+    &--txtbold {
+      font-weight: 600;
+      color: $footer-text-color;
+    }
+
+    a {
+    color: #cccccc;
+    text-decoration: none;
+
+      &:hover {
+        color: $footer-text-color;
+      }
+    }
+
     &-container {
       max-width: $layout-footer-width;
-      background-color: pink;
       margin: 0 auto;
       padding: 1.5rem;
     }
@@ -22,6 +35,29 @@ $footer-text-color: #ffffff;
 
     &-group:after {
       clear: both;
+    }
+
+    &-corporative {
+      clear: both;
+      margin: 1rem 0;
+      overflow: hidden;
+    }
+
+    &-corporative_portals {
+      list-style-type: none;
+      font-size: .875rem;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+        li {
+          float: left;
+          margin-right: 1rem;
+
+            &:last-child {
+              margin-right: 0;
+            }
+        }
     }
 
     &-column {
@@ -41,11 +77,16 @@ $footer-text-color: #ffffff;
         ul {
           list-style-type: none;
           padding: 0;
-          margin: .5rem 0 0;
+          margin: 1rem 0 0;
+
+            li {
+              padding: 0.2rem 0;
+            }
         }
 
         h4 {
           margin: 0;
+          font-size: 1.250rem;
         }
 
         img {
