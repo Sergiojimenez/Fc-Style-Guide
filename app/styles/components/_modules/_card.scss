@@ -65,6 +65,14 @@ $card-border-grey: #eaeaea;
         &--price {
             font-size: 2.5rem;
         }
+
+        svg[class^="fc-icon-svg-"] {
+            fill: #333333;
+            width: 2rem;
+            height: 2rem;
+            vertical-align: top;
+            padding-right: 0.2rem;
+        }
     }
     &-meta {
         margin-bottom: .5rem;
