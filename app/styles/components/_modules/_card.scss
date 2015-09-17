@@ -97,6 +97,7 @@ $card-border-grey: #eaeaea;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
+        display: -moz-flexbox;
         display: flex;
         list-style: none;
         -webkit-flex-wrap: wrap;
@@ -114,6 +115,7 @@ $card-border-grey: #eaeaea;
             -ms-flex: 1;
             -moz-flex: 1;
               -o-flex: 1;
+                 flex: 1;
     }
     &-phone {
         margin: .1rem;
@@ -121,9 +123,21 @@ $card-border-grey: #eaeaea;
         text-align: center;
         background-color: $card-border-grey;
         -webkit-flex: 2;
-            -ms-flex: 2;
-            -moz-flex: 1;
-              -o-flex: 1;
+        -ms-flex: 2;
+        -moz-flex: 1;
+        -o-flex: 1;
+        flex: 1;
+    }
+    &-favIcon {
+        margin-top: .3em;
+        margin-bottom: .3em;
+        margin-right: .3em;
+        width: 2rem;
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        -moz-flex: 1;
+        -o-flex: 1;
+        flex: 1;
     }
     &-arrow-downIcon {
         margin-bottom: 1em;
@@ -138,13 +152,7 @@ $card-border-grey: #eaeaea;
         margin-top: .3em;
         margin-bottom: .3em;
         margin-right: .3em;
-        width: 2rem; 
-    }
-    &-favIcon {
-        margin-top: .3em;
-        margin-bottom: .3em;
-        margin-right: .3em;
-        width: 2rem; 
+        width: 2rem;
     }
     &--highlighted {
         background-color: $card-bg-highlight;
