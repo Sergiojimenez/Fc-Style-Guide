@@ -91,13 +91,26 @@
                 </div>
                 <div class="re-Card-footer">
                     <button class="re-Card-contactButton" type="button">
-                        <span><img class="re-Card-envelopIcon" src="Images/envelop.svg" alt="contact"/></span>
+                        <span>
+                          <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#envelop"></use>
+                          </svg>
+                        </span>
                     </button>
                     <button class="re-Card-phone" type="button">
-                        <span><img class="re-Card-phoneIcon" src="Images/phone.svg" alt="phone">93 876 55 33</span>
+                        <span>
+                        <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#phone"></use>
+                        </svg>
+                        93 876 55 33
+                        </span>
                     </button>
                     <button class="re-Card-favIcon" type="button">
-                        <span><img class="re-Card-favIcon" src="Images/fav_off.svg" alt="add to favorites"></span>
+                        <span>
+                          <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#fav_off"></use>
+                          </svg>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -135,19 +148,32 @@
                 </div>
                 <div class="re-Card-footer">
                     <button class="re-Card-contactButton" type="button">
-                        <span><img class="re-Card-envelopIcon" src="Images/envelop.svg" alt="contact"/></span>
+                        <span>
+                          <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#envelop"></use>
+                          </svg>
+                        </span>
                     </button>
                     <button class="re-Card-phone" type="button">
-                        <span><img class="re-Card-phoneIcon" src="Images/phone.svg" alt="phone">93 876 55 33</span>
+                        <span>
+                        <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#phone"></use>
+                        </svg>
+                        93 876 55 33
+                        </span>
                     </button>
                     <button class="re-Card-favIcon" type="button">
-                        <span><img class="re-Card-favIcon" src="Images/fav_off.svg" alt="add to favorites"></span>
+                        <span>
+                          <svg class="fc-icon-svg-youtube">
+                            <use xlink:href="images/sprite.symbol.svg#fav_off"></use>
+                          </svg>
+                        </span>
                     </button>
                 </div>
             </div>
           </div>
         </section>
-        
+
         </div>
         <div class="mdl-layout__tab-panel" id="re-Card">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
@@ -228,10 +254,40 @@
               <div class="re-Footer-column" id="share">
                 <h4>Síguenos en</h4>
                   <ul>
-                    <li><a href="#"><i class="fc-icon-facebook"></i>facebook</a></li>
-                    <li><a href="#"><i class="fc-icon-twitter"></i>twitter</a></li>
-                    <li><a href="#"><i class="fc-icon-youtube"></i>youtube</a></li>
-                    <li><a href="#"><i class="fc-icon-pinterest"></i>pinterest</a></li>
+                    <li><a href="#">
+                      <svg class="fc-icon-svg-facebook">
+                        <use xlink:href="images/sprite.symbol.svg#facebook"></use>
+                      </svg>
+                    facebook</a>
+                    </li>
+
+                    <li><a href="#">
+                      <svg class="fc-icon-svg-twitter">
+                        <use xlink:href="images/sprite.symbol.svg#twitter"></use>
+                      </svg>
+                    twitter</a>
+                    </li>
+
+                    <li><a href="#">
+                      <svg class="fc-icon-svg-youtube">
+                        <use xlink:href="images/sprite.symbol.svg#youtube"></use>
+                      </svg>
+                    youtube</a>
+                    </li>
+
+                    <li><a href="#">
+                    <svg class="fc-icon-svg-pinterest">
+                        <use xlink:href="images/sprite.symbol.svg#pinterest"></use>
+                      </svg>
+                    pinterest</a>
+                    </li>
+
+                    <li><a href="#">
+                    <svg class="fc-icon-svg-googleplus">
+                        <use xlink:href="images/sprite.symbol.svg#googleplus"></use>
+                      </svg>
+                    google +</a>
+                    </li>
                   </ul>
               </div>
               <div class="re-Footer-column" id="mobile">
@@ -275,6 +331,8 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <!-- build:js(app/) ../../scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/vendor/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

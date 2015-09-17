@@ -7,6 +7,14 @@ $footer-text-color: #ffffff;
   background-color: $footer-bg-grey;
   color: $footer-text-color;
 
+    svg[class^="fc-icon-svg-"] {
+      fill: #ffffff;
+      width: 1.5rem;
+      height: 1.5rem;
+      vertical-align: middle;
+      padding-right: 0.2rem;
+    }
+
     &--txtbold {
       font-weight: 600;
       color: $footer-text-color;
@@ -104,4 +112,7 @@ $footer-text-color: #ffffff;
         }
     }
 }
+
+
+
 

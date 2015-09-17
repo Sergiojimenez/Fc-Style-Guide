@@ -104,6 +104,14 @@ $card-border-grey: #eaeaea;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin: .5rem;
+
+          svg[class^="fc-icon-svg-"] {
+            fill: #333333;
+            width: 1.5rem;
+            height: 1.5rem;
+            vertical-align: middle;
+            padding-right: 0.2rem;
+          }
     }
     &-contactButton {
         margin: .1rem;
