@@ -94,16 +94,15 @@ $card-border-grey: #eaeaea;
         text-align: center;
     }
     &-footer {
-        .re-Card-footer {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            list-style: none;
-            -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin: .5rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: .5rem;
     }
     &-contactButton {
         margin: .1rem;
@@ -128,12 +127,12 @@ $card-border-grey: #eaeaea;
     }
     &-arrow-downIcon {
         margin-bottom: 1em;
-        width: 2rem; 
+        width: 2rem;
     }
     &-envelopIcon {
         margin-top: .3em;
         margin-bottom: .3em;
-        width: 2rem; 
+        width: 2rem;
     }
     &-phoneIcon {
         margin-top: .3em;
