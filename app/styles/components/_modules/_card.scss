@@ -21,7 +21,7 @@ $card-border-grey: #eaeaea;
     &-bumpdate {
         font-size: .8rem;
         display: block;
-        height: .9rem;
+        height: 1.3rem;
         text-align: center;
         text-transform: uppercase;
         color: darken($card-type, 20%);
@@ -50,7 +50,10 @@ $card-border-grey: #eaeaea;
     }
     &-media {
         position: relative;
-        margin: .5rem;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        margin-bottom: 1.5rem;
+        margin-right: .5em;
         img
         {
             width: 100%;
@@ -58,8 +61,9 @@ $card-border-grey: #eaeaea;
     }
     &-priceContainer {
         text-align: center;
+        margin-bottom: .5rem;
         &--price {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
     &-meta {
@@ -88,7 +92,7 @@ $card-border-grey: #eaeaea;
         margin: 0 auto;
         padding: .5rem;
         text-align: center;
-    } 
+    }
     &-footer {
         display: flex;
         list-style: none;
@@ -97,22 +101,46 @@ $card-border-grey: #eaeaea;
 
     }
     &-contactButton {
-        margin: 0;
-        border: $card-border-grey 1px solid;
+        margin: .1rem;
+        border: $card-border-grey .1rem solid;
+        background-color: $card-border-grey;
         cursor: pointer;
         overflow: hidden;
         -webkit-flex: 1;
             -ms-flex: 1;
     }
     &-phone {
+        margin: .1rem;
+        border: $card-border-grey .1rem solid;
         text-align: center;
-        -webkit-flex: 1;
-            -ms-flex: 1;
+        background-color: $card-border-grey;
+        -webkit-flex: 2;
+            -ms-flex: 2;
+    }
+    &-envelopIcon {
+        margin-top: .3em;
+        margin-bottom: .3em;
+        width: 2rem; 
+    }
+    &-phoneIcon {
+        margin-top: .3em;
+        margin-bottom: .3em;
+        margin-right: .3em;
+        width: 2rem; 
+    }
+    &-favIcon {
+        margin-top: .3em;
+        margin-bottom: .3em;
+        margin-right: .3em;
+        width: 2rem; 
     }
     &--highlighted {
         background-color: $card-bg-highlight;
     }
     &-favIcon {
+        margin: .1rem;
+        background-color: $card-border-grey;
+        border: $card-border-grey .1rem solid;
         display: inline-block;
         text-align: center;
         -webkit-flex: 1;
