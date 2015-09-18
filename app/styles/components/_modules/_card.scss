@@ -62,8 +62,14 @@ $card-border-grey: #eaeaea;
     &-priceContainer {
         text-align: center;
         margin-bottom: .5rem;
-        &--price {
+        &--price,
+        &--price-down {
             font-size: 2.5rem;
+        }
+
+        &--price-down {
+          font-weight: 600;
+          color: #78aa3a;
         }
 
         svg[class^="fc-icon-svg-"] {
@@ -72,6 +78,10 @@ $card-border-grey: #eaeaea;
             height: 2rem;
             vertical-align: top;
             padding-right: 0.2rem;
+        }
+
+        svg[class="fc-icon-svg-arrow_down"] {
+            fill: #78aa3a;
         }
     }
     &-meta {
@@ -115,12 +125,17 @@ $card-border-grey: #eaeaea;
 
           svg[class^="fc-icon-svg-"] {
             fill: #333333;
-            width: 1.5rem;
+            width: 1.8rem;
             height: 1.5rem;
             vertical-align: middle;
             padding-right: 0.2rem;
           }
+
+          button {
+            padding: 0.625rem 0;
+          }
     }
+
     &-contactButton {
         margin: .1rem;
         border: $card-border-grey .1rem solid;
@@ -154,7 +169,12 @@ $card-border-grey: #eaeaea;
         -moz-flex: 1;
         -o-flex: 1;
         flex: 1;
+
+            svg.fc-icon-svg-fav_off:hover {
+              fill: #ffcc00;
+            }
     }
+
     &-arrow-downIcon {
         margin-bottom: 1em;
         width: 2rem;
@@ -200,3 +220,24 @@ $card-border-grey: #eaeaea;
         }
     }
 }
+
+.fc-icon-svg-fav {
+  stroke-width: 1px;
+  stroke: #333333;
+  fill: rgba(255,82,82,0) !important;
+  fill-opactiy: 0;
+  transition: all 0.5s;
+}
+
+.re-Card-favIcon:hover .fc-icon-svg-fav {
+  fill: rgba(255,82,82,1) !important;
+  fill-opactiy: 1;
+  stroke: rgba(255,82,82,0);
+  stroke-opactiy: 0 !important;
+  transform: scale(1.5);
+}
+
+
+// svg path {
+//     fill: inherit;
+// }
