@@ -1,0 +1,85 @@
+$re-colorBlack: #333333;
+$re-colorGrey: #999999;
+$re-colorLightGrey: #eaeaea;
+$re-colorLighterGrey: #f5f5f5;;
+
+$re-colorBlue: #42a5f5;
+$re-colorLightBlue: #b3d6ed;
+$re-colorDarkBlue: #1565c0;
+
+$re-colorRed: #ff5252;
+$re-colorLightRed: #ffcdd2;
+$re-colorDarkRed: #d50000;
+
+@mixin applyColor ($color){
+  background: $color;
+    &>div {
+      border: 1px solid $color;
+    }
+}
+
+
+.re-Colors {
+
+  &-palette_item--black {
+    @include applyColor($re-colorBlack);
+  }
+
+  &-palette_item--grey {
+    @include applyColor($re-colorGrey);
+  }
+
+  &-palette_item--lightgrey {
+    @include applyColor($re-colorLightGrey);
+  }
+
+  &-palette_item--lightergrey {
+    @include applyColor($re-colorLighterGrey);
+  }
+
+  &-palette_item--blue {
+    @include applyColor($re-colorBlue);
+  }
+
+  &-palette_item--lightblue {
+    @include applyColor($re-colorLightBlue);
+  }
+
+  &-palette_item--darkblue {
+    @include applyColor($re-colorDarkBlue);
+  }
+
+  &-palette_item--red {
+    @include applyColor($re-colorRed);
+  }
+
+  &-palette_item--lightred {
+    @include applyColor($re-colorLightRed);
+  }
+
+  &-palette_item--darkred {
+    @include applyColor($re-colorDarkRed);
+  }
+
+  &-palette {
+    margin: 2rem 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+     li {
+      flex: 1 1 0;
+      min-height: 200px;
+      position: relative;
+
+        &>div {
+          position: absolute;
+          bottom: 0;
+          padding: 1rem;
+          background: white;
+          width: 100%;
+        }
+     }
+  }
+}
